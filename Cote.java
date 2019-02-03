@@ -1,4 +1,5 @@
 public class Cote extends Animal{
+ 
 
 	int climbingHeght;
 	String whatToClimb;

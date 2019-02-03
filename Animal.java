@@ -20,11 +20,11 @@ public class Animal {
 	}
 
 	public static void main(String... args) {
-		animal cote = new Cote();
-		animal doge = new Doge();
-		animal animal = new Animal();
+		Animal cote = new Cote();
+		Animal doge = new Doge();
+		Animal animal = new Animal();
 
-		animal cote = new Cote ("Дай жрать!",4);
+		Animal coteWithConstructor = new Cote ("Дай жрать!",4);
 		Cote chernobyl_cote = new Cote ("Проходи сталкер!", 6);
 
 		System.out.println(cote.legs);
@@ -38,15 +38,16 @@ public class Animal {
 		System.out.println(animal.voice);
 
 
-		Animal animal = new Cote();
+		Animal animalLikeCote = new Cote();
 		//animal.climb(); //ошибка
-		Cote cote = (Cote) animal;
-		cote.climb(); // а теперь работает
+		Cote coteWhatBeenAnimal = (Cote) animalLikeCote;
+		//cote.climb(); // а теперь работает
 
-		cote.climb ("Дерево", 3);
+		//animalLikeCote.climb ("Дерево", 3);
+		coteWhatBeenAnimal.climb ("Дерево", 3);
 	}
 
-	private void tmp(animal a) {
+	private void tmp(Animal a) {
 
 	}
 }
