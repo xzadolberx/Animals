@@ -1,5 +1,5 @@
 public class Animal {
-	public Boolean legs;
+	public int legs;
 
 	public int setLegs (int legs)
 	{
